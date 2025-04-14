@@ -1,0 +1,839 @@
+{
+  "providers": [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Chen",
+      "photo": "https://randomuser.me/api/portraits/women/22.jpg",
+      "specialty": "Primary Care",
+      "credentials": "MD",
+      "location": {
+        "address": "123 Health Blvd",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94107",
+        "coordinates": {
+          "lat": 37.7749,
+          "lng": -122.4194
+        }
+      },
+      "insuranceAccepted": [
+        "Blue Cross",
+        "Aetna",
+        "Medicare",
+        "UnitedHealthcare"
+      ],
+      "availability": {
+        "nextAvailable": "2025-04-12T10:30:00",
+        "daysToAppointment": 5
+      },
+      "rating": 4.8,
+      "reviewCount": 124,
+      "languages": ["English", "Mandarin"],
+      "education": "Stanford University School of Medicine",
+      "hospitalAffiliations": ["SF General Hospital", "UCSF Medical Center"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Rodriguez",
+      "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+      "specialty": "Cardiology",
+      "credentials": "MD, FACC",
+      "location": {
+        "address": "456 Heart Way",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94108",
+        "coordinates": {
+          "lat": 37.7833,
+          "lng": -122.4167
+        }
+      },
+      "insuranceAccepted": ["Cigna", "Blue Shield", "Medicare", "Kaiser"],
+      "availability": {
+        "nextAvailable": "2025-04-21T14:00:00",
+        "daysToAppointment": 14
+      },
+      "rating": 4.7,
+      "reviewCount": 98,
+      "languages": ["English", "Spanish"],
+      "education": "Johns Hopkins School of Medicine",
+      "hospitalAffiliations": [
+        "California Pacific Medical Center",
+        "UCSF Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 3,
+      "name": "Dr. Emily Washington",
+      "photo": "https://randomuser.me/api/portraits/women/45.jpg",
+      "specialty": "Pediatrics",
+      "credentials": "MD, FAAP",
+      "location": {
+        "address": "789 Child Ave",
+        "city": "Oakland",
+        "state": "CA",
+        "zipCode": "94610",
+        "coordinates": {
+          "lat": 37.8044,
+          "lng": -122.2711
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Aetna", "Cigna", "UnitedHealthcare"],
+      "availability": {
+        "nextAvailable": "2025-04-09T09:15:00",
+        "daysToAppointment": 2
+      },
+      "rating": 4.9,
+      "reviewCount": 156,
+      "languages": ["English"],
+      "education": "University of California, San Francisco",
+      "hospitalAffiliations": ["UCSF Benioff Children's Hospital"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 4,
+      "name": "Dr. James Wilson",
+      "photo": "https://randomuser.me/api/portraits/men/67.jpg",
+      "specialty": "Dermatology",
+      "credentials": "MD, FAAD",
+      "location": {
+        "address": "101 Skin Street",
+        "city": "Palo Alto",
+        "state": "CA",
+        "zipCode": "94301",
+        "coordinates": {
+          "lat": 37.4419,
+          "lng": -122.143
+        }
+      },
+      "insuranceAccepted": ["Medicare", "Blue Shield", "Aetna"],
+      "availability": {
+        "nextAvailable": "2025-05-02T11:00:00",
+        "daysToAppointment": 25
+      },
+      "rating": 4.5,
+      "reviewCount": 87,
+      "languages": ["English"],
+      "education": "Harvard Medical School",
+      "hospitalAffiliations": ["Stanford Health Care"],
+      "acceptingNewPatients": true,
+      "telehealth": false
+    },
+    {
+      "id": 5,
+      "name": "Dr. Anna Kim",
+      "photo": "https://randomuser.me/api/portraits/women/28.jpg",
+      "specialty": "Psychiatry",
+      "credentials": "MD, PhD",
+      "location": {
+        "address": "202 Mind Blvd",
+        "city": "Berkeley",
+        "state": "CA",
+        "zipCode": "94704",
+        "coordinates": {
+          "lat": 37.8715,
+          "lng": -122.273
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Cigna", "Lyra Health"],
+      "availability": {
+        "nextAvailable": "2025-04-15T16:00:00",
+        "daysToAppointment": 8
+      },
+      "rating": 4.9,
+      "reviewCount": 113,
+      "languages": ["English", "Korean"],
+      "education": "Yale School of Medicine",
+      "hospitalAffiliations": ["Alta Bates Summit Medical Center"],
+      "acceptingNewPatients": false,
+      "telehealth": true
+    },
+    {
+      "id": 6,
+      "name": "Dr. Robert Johnson",
+      "photo": "https://randomuser.me/api/portraits/men/52.jpg",
+      "specialty": "Orthopedic Surgery",
+      "credentials": "MD",
+      "location": {
+        "address": "303 Bone Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94115",
+        "coordinates": {
+          "lat": 37.7857,
+          "lng": -122.434
+        }
+      },
+      "insuranceAccepted": [
+        "Blue Shield",
+        "UnitedHealthcare",
+        "Cigna",
+        "Medicare"
+      ],
+      "availability": {
+        "nextAvailable": "2025-04-28T13:30:00",
+        "daysToAppointment": 21
+      },
+      "rating": 4.6,
+      "reviewCount": 92,
+      "languages": ["English"],
+      "education": "Columbia University College of Physicians and Surgeons",
+      "hospitalAffiliations": [
+        "UCSF Medical Center",
+        "St. Mary's Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": false
+    },
+    {
+      "id": 7,
+      "name": "Dr. Lisa Martinez",
+      "photo": "https://randomuser.me/api/portraits/women/65.jpg",
+      "specialty": "Primary Care",
+      "credentials": "DO",
+      "location": {
+        "address": "404 Family Lane",
+        "city": "San Jose",
+        "state": "CA",
+        "zipCode": "95113",
+        "coordinates": {
+          "lat": 37.3382,
+          "lng": -121.8863
+        }
+      },
+      "insuranceAccepted": ["Aetna", "Blue Cross", "Medicare", "Kaiser"],
+      "availability": {
+        "nextAvailable": "2025-04-10T08:45:00",
+        "daysToAppointment": 3
+      },
+      "rating": 4.7,
+      "reviewCount": 138,
+      "languages": ["English", "Spanish"],
+      "education": "Touro University California",
+      "hospitalAffiliations": [
+        "Good Samaritan Hospital",
+        "Regional Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 8,
+      "name": "Dr. David Park",
+      "photo": "https://randomuser.me/api/portraits/men/23.jpg",
+      "specialty": "Neurology",
+      "credentials": "MD, PhD",
+      "location": {
+        "address": "505 Brain Way",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94118",
+        "coordinates": {
+          "lat": 37.7818,
+          "lng": -122.4525
+        }
+      },
+      "insuranceAccepted": ["Blue Shield", "Medicare", "UnitedHealthcare"],
+      "availability": {
+        "nextAvailable": "2025-05-05T10:00:00",
+        "daysToAppointment": 28
+      },
+      "rating": 4.8,
+      "reviewCount": 76,
+      "languages": ["English", "Korean"],
+      "education": "University of Pennsylvania School of Medicine",
+      "hospitalAffiliations": [
+        "UCSF Medical Center",
+        "Zuckerberg San Francisco General Hospital"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 9,
+      "name": "Dr. Samantha Brooks",
+      "photo": "https://randomuser.me/api/portraits/women/33.jpg",
+      "specialty": "Obstetrics & Gynecology",
+      "credentials": "MD, FACOG",
+      "location": {
+        "address": "606 Women's Health Circle",
+        "city": "Oakland",
+        "state": "CA",
+        "zipCode": "94612",
+        "coordinates": {
+          "lat": 37.8059,
+          "lng": -122.2719
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Aetna", "Cigna", "UnitedHealthcare"],
+      "availability": {
+        "nextAvailable": "2025-04-14T11:30:00",
+        "daysToAppointment": 7
+      },
+      "rating": 4.9,
+      "reviewCount": 183,
+      "languages": ["English"],
+      "education": "UCLA David Geffen School of Medicine",
+      "hospitalAffiliations": [
+        "Alta Bates Summit Medical Center",
+        "Kaiser Oakland Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 10,
+      "name": "Dr. Thomas Lee",
+      "photo": "https://randomuser.me/api/portraits/men/41.jpg",
+      "specialty": "Ophthalmology",
+      "credentials": "MD",
+      "location": {
+        "address": "707 Vision Drive",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94109",
+        "coordinates": {
+          "lat": 37.7926,
+          "lng": -122.4201
+        }
+      },
+      "insuranceAccepted": ["Medicare", "Blue Shield", "VSP"],
+      "availability": {
+        "nextAvailable": "2025-04-22T09:00:00",
+        "daysToAppointment": 15
+      },
+      "rating": 4.7,
+      "reviewCount": 105,
+      "languages": ["English", "Cantonese"],
+      "education": "UCSF School of Medicine",
+      "hospitalAffiliations": [
+        "UCSF Medical Center",
+        "California Pacific Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": false
+    },
+    {
+      "id": 11,
+      "name": "Dr. Rachel Green",
+      "photo": "https://randomuser.me/api/portraits/women/10.jpg",
+      "specialty": "Primary Care",
+      "credentials": "MD",
+      "location": {
+        "address": "808 Wellness Street",
+        "city": "Walnut Creek",
+        "state": "CA",
+        "zipCode": "94596",
+        "coordinates": {
+          "lat": 37.9101,
+          "lng": -122.0652
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Medicare", "Cigna"],
+      "availability": {
+        "nextAvailable": "2025-04-08T14:30:00",
+        "daysToAppointment": 1
+      },
+      "rating": 4.6,
+      "reviewCount": 132,
+      "languages": ["English"],
+      "education": "University of Michigan Medical School",
+      "hospitalAffiliations": ["John Muir Health"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 12,
+      "name": "Dr. Hassan Ahmed",
+      "photo": "https://randomuser.me/api/portraits/men/75.jpg",
+      "specialty": "Endocrinology",
+      "credentials": "MD, FACE",
+      "location": {
+        "address": "909 Hormone Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zipCode": "94401",
+        "coordinates": {
+          "lat": 37.5636,
+          "lng": -122.322
+        }
+      },
+      "insuranceAccepted": [
+        "Blue Shield",
+        "Aetna",
+        "UnitedHealthcare",
+        "Medicare"
+      ],
+      "availability": {
+        "nextAvailable": "2025-04-17T15:45:00",
+        "daysToAppointment": 10
+      },
+      "rating": 4.8,
+      "reviewCount": 94,
+      "languages": ["English", "Arabic"],
+      "education": "Mayo Clinic School of Medicine",
+      "hospitalAffiliations": [
+        "Mills-Peninsula Medical Center",
+        "Sutter Health"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 13,
+      "name": "Dr. Jennifer Wu",
+      "photo": "https://randomuser.me/api/portraits/women/17.jpg",
+      "specialty": "Allergy & Immunology",
+      "credentials": "MD",
+      "location": {
+        "address": "1010 Allergy Road",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94114",
+        "coordinates": {
+          "lat": 37.7599,
+          "lng": -122.435
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Cigna", "Medicare", "Aetna"],
+      "availability": {
+        "nextAvailable": "2025-04-18T13:00:00",
+        "daysToAppointment": 11
+      },
+      "rating": 4.9,
+      "reviewCount": 87,
+      "languages": ["English", "Mandarin"],
+      "education": "Northwestern University Feinberg School of Medicine",
+      "hospitalAffiliations": [
+        "UCSF Medical Center",
+        "Zuckerberg San Francisco General Hospital"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 14,
+      "name": "Dr. Marcus Williams",
+      "photo": "https://randomuser.me/api/portraits/men/19.jpg",
+      "specialty": "Physical Therapy",
+      "credentials": "DPT, OCS",
+      "location": {
+        "address": "1111 Rehab Lane",
+        "city": "Berkeley",
+        "state": "CA",
+        "zipCode": "94703",
+        "coordinates": {
+          "lat": 37.8624,
+          "lng": -122.2887
+        }
+      },
+      "insuranceAccepted": ["Blue Shield", "Medicare", "UnitedHealthcare"],
+      "availability": {
+        "nextAvailable": "2025-04-11T16:15:00",
+        "daysToAppointment": 4
+      },
+      "rating": 4.7,
+      "reviewCount": 123,
+      "languages": ["English"],
+      "education": "University of Southern California",
+      "hospitalAffiliations": ["Alta Bates Summit Medical Center"],
+      "acceptingNewPatients": true,
+      "telehealth": false
+    },
+    {
+      "id": 15,
+      "name": "Dr. Maria Gonzalez",
+      "photo": "https://randomuser.me/api/portraits/women/56.jpg",
+      "specialty": "Cardiology",
+      "credentials": "MD, FACC",
+      "location": {
+        "address": "1212 Cardiac Court",
+        "city": "San Jose",
+        "state": "CA",
+        "zipCode": "95110",
+        "coordinates": {
+          "lat": 37.3387,
+          "lng": -121.8853
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Aetna", "Medicare", "Kaiser"],
+      "availability": {
+        "nextAvailable": "2025-04-25T10:30:00",
+        "daysToAppointment": 18
+      },
+      "rating": 4.8,
+      "reviewCount": 143,
+      "languages": ["English", "Spanish"],
+      "education": "Stanford University School of Medicine",
+      "hospitalAffiliations": [
+        "Good Samaritan Hospital",
+        "Stanford Health Care"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 16,
+      "name": "Dr. Kevin Patel",
+      "photo": "https://randomuser.me/api/portraits/men/62.jpg",
+      "specialty": "Gastroenterology",
+      "credentials": "MD",
+      "location": {
+        "address": "1313 Digestive Drive",
+        "city": "Oakland",
+        "state": "CA",
+        "zipCode": "94609",
+        "coordinates": {
+          "lat": 37.835,
+          "lng": -122.2695
+        }
+      },
+      "insuranceAccepted": [
+        "Blue Shield",
+        "Cigna",
+        "Medicare",
+        "UnitedHealthcare"
+      ],
+      "availability": {
+        "nextAvailable": "2025-04-24T09:15:00",
+        "daysToAppointment": 17
+      },
+      "rating": 4.5,
+      "reviewCount": 88,
+      "languages": ["English", "Gujarati", "Hindi"],
+      "education": "University of California, San Francisco",
+      "hospitalAffiliations": [
+        "Alta Bates Summit Medical Center",
+        "Kaiser Oakland Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 17,
+      "name": "Dr. Christine Taylor",
+      "photo": "https://randomuser.me/api/portraits/women/82.jpg",
+      "specialty": "Dermatology",
+      "credentials": "MD, FAAD",
+      "location": {
+        "address": "1414 Skin Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94123",
+        "coordinates": {
+          "lat": 37.8003,
+          "lng": -122.4323
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Aetna", "UnitedHealthcare"],
+      "availability": {
+        "nextAvailable": "2025-05-08T14:00:00",
+        "daysToAppointment": 31
+      },
+      "rating": 4.9,
+      "reviewCount": 176,
+      "languages": ["English"],
+      "education": "New York University School of Medicine",
+      "hospitalAffiliations": ["UCSF Medical Center"],
+      "acceptingNewPatients": false,
+      "telehealth": true
+    },
+    {
+      "id": 18,
+      "name": "Dr. Jason Brown",
+      "photo": "https://randomuser.me/api/portraits/men/88.jpg",
+      "specialty": "Psychiatry",
+      "credentials": "MD",
+      "location": {
+        "address": "1515 Mental Health Road",
+        "city": "Palo Alto",
+        "state": "CA",
+        "zipCode": "94304",
+        "coordinates": {
+          "lat": 37.4419,
+          "lng": -122.1419
+        }
+      },
+      "insuranceAccepted": ["Blue Shield", "Lyra Health", "Cigna"],
+      "availability": {
+        "nextAvailable": "2025-04-16T17:30:00",
+        "daysToAppointment": 9
+      },
+      "rating": 4.7,
+      "reviewCount": 112,
+      "languages": ["English"],
+      "education": "Stanford University School of Medicine",
+      "hospitalAffiliations": ["Stanford Health Care"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 19,
+      "name": "Dr. Olivia Thompson",
+      "photo": "https://randomuser.me/api/portraits/women/3.jpg",
+      "specialty": "Pediatrics",
+      "credentials": "MD, FAAP",
+      "location": {
+        "address": "1616 Children's Way",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94132",
+        "coordinates": {
+          "lat": 37.7241,
+          "lng": -122.4799
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Aetna", "UnitedHealthcare", "Cigna"],
+      "availability": {
+        "nextAvailable": "2025-04-10T15:45:00",
+        "daysToAppointment": 3
+      },
+      "rating": 4.8,
+      "reviewCount": 165,
+      "languages": ["English"],
+      "education": "University of California, San Francisco",
+      "hospitalAffiliations": ["UCSF Benioff Children's Hospital"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 20,
+      "name": "Dr. Andrew Garcia",
+      "photo": "https://randomuser.me/api/portraits/men/24.jpg",
+      "specialty": "Orthopedic Surgery",
+      "credentials": "MD",
+      "location": {
+        "address": "1717 Joint Avenue",
+        "city": "San Mateo",
+        "state": "CA",
+        "zipCode": "94403",
+        "coordinates": {
+          "lat": 37.5394,
+          "lng": -122.3013
+        }
+      },
+      "insuranceAccepted": ["Medicare", "Blue Shield", "Cigna"],
+      "availability": {
+        "nextAvailable": "2025-04-30T13:15:00",
+        "daysToAppointment": 23
+      },
+      "rating": 4.6,
+      "reviewCount": 95,
+      "languages": ["English", "Spanish"],
+      "education": "Duke University School of Medicine",
+      "hospitalAffiliations": [
+        "Mills-Peninsula Medical Center",
+        "Sutter Health"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": false
+    },
+    {
+      "id": 21,
+      "name": "Dr. Michelle Wong",
+      "photo": "https://randomuser.me/api/portraits/women/37.jpg",
+      "specialty": "Primary Care",
+      "credentials": "MD",
+      "location": {
+        "address": "1818 Family Practice Place",
+        "city": "Redwood City",
+        "state": "CA",
+        "zipCode": "94063",
+        "coordinates": {
+          "lat": 37.4852,
+          "lng": -122.2364
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Medicare", "Aetna", "Kaiser"],
+      "availability": {
+        "nextAvailable": "2025-04-09T11:00:00",
+        "daysToAppointment": 2
+      },
+      "rating": 4.9,
+      "reviewCount": 147,
+      "languages": ["English", "Cantonese"],
+      "education": "University of California, San Francisco",
+      "hospitalAffiliations": ["Sequoia Hospital", "Stanford Health Care"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 22,
+      "name": "Dr. Jamal Wilson",
+      "photo": "https://randomuser.me/api/portraits/men/55.jpg",
+      "specialty": "Neurology",
+      "credentials": "MD",
+      "location": {
+        "address": "1919 Neuro Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94117",
+        "coordinates": {
+          "lat": 37.7692,
+          "lng": -122.4481
+        }
+      },
+      "insuranceAccepted": [
+        "Blue Shield",
+        "Medicare",
+        "UnitedHealthcare",
+        "Cigna"
+      ],
+      "availability": {
+        "nextAvailable": "2025-04-21T09:30:00",
+        "daysToAppointment": 14
+      },
+      "rating": 4.7,
+      "reviewCount": 108,
+      "languages": ["English"],
+      "education": "Howard University College of Medicine",
+      "hospitalAffiliations": [
+        "UCSF Medical Center",
+        "Zuckerberg San Francisco General Hospital"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 23,
+      "name": "Dr. Elena Nikolova",
+      "photo": "https://randomuser.me/api/portraits/women/72.jpg",
+      "specialty": "Endocrinology",
+      "credentials": "MD",
+      "location": {
+        "address": "2020 Metabolism Road",
+        "city": "Berkeley",
+        "state": "CA",
+        "zipCode": "94705",
+        "coordinates": {
+          "lat": 37.8608,
+          "lng": -122.2451
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Medicare", "Aetna"],
+      "availability": {
+        "nextAvailable": "2025-04-23T16:00:00",
+        "daysToAppointment": 16
+      },
+      "rating": 4.8,
+      "reviewCount": 89,
+      "languages": ["English", "Russian", "Bulgarian"],
+      "education": "University of California, San Francisco",
+      "hospitalAffiliations": ["Alta Bates Summit Medical Center"],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    },
+    {
+      "id": 24,
+      "name": "Dr. Richard Tran",
+      "photo": "https://randomuser.me/api/portraits/men/42.jpg",
+      "specialty": "Ophthalmology",
+      "credentials": "MD",
+      "location": {
+        "address": "2121 Eye Street",
+        "city": "San Jose",
+        "state": "CA",
+        "zipCode": "95112",
+        "coordinates": {
+          "lat": 37.3393,
+          "lng": -121.8949
+        }
+      },
+      "insuranceAccepted": [
+        "Medicare",
+        "VSP",
+        "Blue Shield",
+        "UnitedHealthcare"
+      ],
+      "availability": {
+        "nextAvailable": "2025-04-14T14:15:00",
+        "daysToAppointment": 7
+      },
+      "rating": 4.6,
+      "reviewCount": 103,
+      "languages": ["English", "Vietnamese"],
+      "education": "University of California, Los Angeles",
+      "hospitalAffiliations": [
+        "Good Samaritan Hospital",
+        "Santa Clara Valley Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": false
+    },
+    {
+      "id": 25,
+      "name": "Dr. Sophia Patel",
+      "photo": "https://randomuser.me/api/portraits/women/90.jpg",
+      "specialty": "Obstetrics & Gynecology",
+      "credentials": "MD, FACOG",
+      "location": {
+        "address": "2222 Women's Health Boulevard",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94102",
+        "coordinates": {
+          "lat": 37.7786,
+          "lng": -122.4172
+        }
+      },
+      "insuranceAccepted": ["Blue Cross", "Aetna", "Cigna", "Medicare"],
+      "availability": {
+        "nextAvailable": "2025-04-18T11:30:00",
+        "daysToAppointment": 11
+      },
+      "rating": 4.9,
+      "reviewCount": 172,
+      "languages": ["English", "Hindi", "Gujarati"],
+      "education": "University of California, San Francisco",
+      "hospitalAffiliations": [
+        "UCSF Medical Center",
+        "California Pacific Medical Center"
+      ],
+      "acceptingNewPatients": true,
+      "telehealth": true
+    }
+  ],
+  "specialties": [
+    { "id": 1, "type": "Primary Care" },
+    { "id": 2, "type": "Cardiology" },
+    { "id": 3, "type": "Pediatrics" },
+    { "id": 4, "type": "Dermatology" },
+    { "id": 5, "type": "Psychiatry" },
+    { "id": 6, "type": "Orthopedic Surgery" },
+    { "id": 7, "type": "Neurology" },
+    { "id": 8, "type": "Obstetrics & Gynecology" },
+    { "id": 9, "type": "Ophthalmology" },
+    { "id": 10, "type": "Endocrinology" },
+    { "id": 11, "type": "Allergy & Immunology" },
+    { "id": 12, "type": "Physical Therapy" },
+    { "id": 13, "type": "Gastroenterology" }
+  ],
+  "insurances": [
+    { "id": 1, "name": "Blue Cross" },
+    { "id": 2, "name": "Blue Shield" },
+    { "id": 3, "name": "Medicare" },
+    { "id": 4, "name": "Medicaid" },
+    { "id": 5, "name": "Aetna" },
+    { "id": 6, "name": "Cigna" },
+    { "id": 7, "name": "UnitedHealthcare" },
+    { "id": 8, "name": "Kaiser" },
+    { "id": 9, "name": "Humana" },
+    { "id": 10, "name": "Lyra Health" },
+    { "id": 11, "name": "VSP" }
+  ],
+  "locations": [
+    { "id": 1, "name": "San Francisco, CA" },
+    { "id": 2, "name": "Oakland, CA" },
+    { "id": 3, "name": "Berkeley, CA" },
+    { "id": 4, "name": "Palo Alto, CA" },
+    { "id": 5, "name": "San Jose, CA" },
+    { "id": 6, "name": "Redwood City, CA" },
+    { "id": 7, "name": "San Mateo, CA" },
+    { "id": 8, "name": "Walnut Creek, CA" }
+  ]
+}
