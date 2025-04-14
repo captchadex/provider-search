@@ -1,5 +1,11 @@
 # Provider Search
 
+Firstly:
+
+```
+npm install
+```
+
 Start backend:
 
 ```
