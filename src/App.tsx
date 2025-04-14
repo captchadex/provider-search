@@ -27,6 +27,7 @@ function App() {
   }); // Current location of the user
 
   const [locationSearch, setLocationSearch] = useState<string[]>([]);
+  const [locationSearchInput, setLocationSearchInput] = useState<string>("");
   const [selectedSpecialty, setSelectedSpecialty] =
     useState<SelectableItem>(null);
   const [selectedInsurance, setSelectedInsurance] =
@@ -64,7 +65,12 @@ function App() {
 
   const filteredProviders = providers
     .filter(
-      filterProviders(locationSearch, selectedSpecialty, selectedInsurance)
+      filterProviders(
+        locationSearchInput,
+        locationSearch,
+        selectedSpecialty,
+        selectedInsurance
+      )
     )
     // Sort by distance, closest first
     .sort((a, b) => {
@@ -106,6 +112,7 @@ function App() {
           asap={asap}
           setAsap={setAsap}
           setCurrentLocation={setCurrentLocation}
+          setLocationSearchInput={setLocationSearchInput}
         />
       </div>
       {/* Only show provider cards or its loading state if the map is not visible */}
@@ -152,7 +159,12 @@ function App() {
         setCurrentLocation={setCurrentLocation}
         geolocation={geolocation}
         providers={providers.filter(
-          filterProviders(locationSearch, selectedSpecialty, selectedInsurance)
+          filterProviders(
+            locationSearchInput,
+            locationSearch,
+            selectedSpecialty,
+            selectedInsurance
+          )
         )}
       />
       <Fab

@@ -18,6 +18,7 @@ interface FilterBarProps {
   asap: boolean;
   setAsap: Dispatch<SetStateAction<boolean>>;
   setCurrentLocation: Dispatch<SetStateAction<Coordinates>>;
+  setLocationSearchInput: Dispatch<SetStateAction<string>>;
 }
 
 export function FilterBar({
@@ -30,6 +31,7 @@ export function FilterBar({
   asap,
   setAsap,
   setCurrentLocation,
+  setLocationSearchInput,
 }: FilterBarProps) {
   const [specialties, setSpecialties] = useState<
     { id: number; type: string }[]
@@ -89,6 +91,8 @@ export function FilterBar({
         className="lg:w-[250px]"
         placeholder="Type a city or ZIP code..."
         onChange={async (e) => {
+          setLocationSearchInput(e.target.value);
+
           if (e.target.value === "") {
             setLocationSearch([]);
             return;
@@ -97,7 +101,7 @@ export function FilterBar({
           const result = fuse.search(e.target.value);
 
           // If there is a perfect match
-          if (result[0].score === 0) {
+          if (result.length > 0 && result[0].score === 0) {
             setLocationSearch([result[0].item]);
             return;
           }
@@ -105,17 +109,19 @@ export function FilterBar({
           const items = result.map((item) => item.item);
           setLocationSearch(items);
 
-          // Map our search input to an actual google maps location to get coordinates for the map view
-          const response = await fetch(
-            `https://maps.googleapis.com/maps/api/geocode/json?address=${
-              result[0].item
-            }&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`
-          );
-          const data = await response.json();
-          setCurrentLocation({
-            latitude: data.results[0].geometry.location.lat,
-            longitude: data.results[0].geometry.location.lng,
-          });
+          if (result[0]) {
+            // Map our search input to an actual google maps location to get coordinates for the map view
+            const response = await fetch(
+              `https://maps.googleapis.com/maps/api/geocode/json?address=${
+                result[0].item
+              }&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`
+            );
+            const data = await response.json();
+            setCurrentLocation({
+              latitude: data.results[0].geometry.location.lat,
+              longitude: data.results[0].geometry.location.lng,
+            });
+          }
         }}
       />
       <FilterBox

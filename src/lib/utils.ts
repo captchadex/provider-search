@@ -12,18 +12,21 @@ export function getInitials(name: string) {
 }
 
 export function filterProviders(
+  locationSearchInput: string,
   locationSearch: string[],
   selectedSpecialty: SelectableItem,
   selectedInsurance: SelectableItem
 ) {
   return (provider: Provider) => {
     const matchesLocation =
-      locationSearch.length > 0
+      locationSearchInput.length > 0
         ? locationSearch.includes(provider.location.zipCode) ||
           locationSearch.includes(
             `${provider.location.city}, ${provider.location.state}`
           )
         : true;
+
+    console.log(locationSearchInput);
 
     const matchesSpecialty = selectedSpecialty
       ? provider.specialty === selectedSpecialty.value
