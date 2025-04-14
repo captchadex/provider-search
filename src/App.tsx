@@ -1,7 +1,9 @@
 import { Fragment, useEffect, useState } from "react";
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 
 import { Coordinates, Provider, SelectableItem } from "./types";
 
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Fab } from "./components/ui/fab";
 import { Separator } from "./components/ui/separator";
 import { ProviderCard } from "./components/ProviderCard";
@@ -60,8 +62,36 @@ function App() {
     getUserLocation();
   }, []);
 
+  const filteredProviders = providers
+    .filter(
+      filterProviders(locationSearch, selectedSpecialty, selectedInsurance)
+    )
+    // Sort by distance, closest first
+    .sort((a, b) => {
+      return (
+        getDistance(geolocation, {
+          latitude: a.location.coordinates.lat,
+          longitude: a.location.coordinates.lng,
+        }) -
+        getDistance(geolocation, {
+          latitude: b.location.coordinates.lat,
+          longitude: b.location.coordinates.lng,
+        })
+      );
+    })
+    // Sort by days to appointment if "asap" is selected
+    .sort((a, b) => {
+      if (asap) {
+        return (
+          a.availability.daysToAppointment - b.availability.daysToAppointment
+        );
+      }
+
+      return 0;
+    });
+
   return (
-    <>
+    <div>
       <h1 className="p-4 scroll-m-20 text-4xl font-extrabold">
         Provider Search
       </h1>
@@ -86,49 +116,36 @@ function App() {
           <ProviderCardSkeleton />
         </>
       )}
-      {!isMapVisible &&
-        providers.length > 0 &&
-        providers
-          .filter(
-            filterProviders(
-              locationSearch,
-              selectedSpecialty,
-              selectedInsurance
-            )
-          )
-          // Sort by distance, closest first
-          .sort((a, b) => {
+      {
+        // Show provider cards if there are providers that meet the filters
+        !isMapVisible &&
+          filteredProviders.length > 0 &&
+          filteredProviders.map((provider, index) => {
             return (
-              getDistance(geolocation, {
-                latitude: a.location.coordinates.lat,
-                longitude: a.location.coordinates.lng,
-              }) -
-              getDistance(geolocation, {
-                latitude: b.location.coordinates.lat,
-                longitude: b.location.coordinates.lng,
-              })
+              <Fragment key={provider.id}>
+                <ProviderCard provider={provider} geolocation={geolocation} />
+                {
+                  // don't show separator after last provider
+                  index !== providers.length - 1 && <Separator />
+                }
+              </Fragment>
             );
           })
-          // Sort by days to appointment if "asap" is selected
-          .sort((a, b) => {
-            if (asap) {
-              return (
-                a.availability.daysToAppointment -
-                b.availability.daysToAppointment
-              );
-            }
-
-            return 0;
-          })
-          .map((provider, index) => (
-            <Fragment key={provider.id}>
-              <ProviderCard provider={provider} geolocation={geolocation} />
-              {
-                // don't show separator after last provider
-                index !== providers.length - 1 && <Separator />
-              }
-            </Fragment>
-          ))}
+      }
+      {
+        // Show empty state if no providers meet the filters and the data is no longer loading
+        !isMapVisible &&
+          providers.length !== 0 &&
+          filteredProviders.length === 0 && (
+            <Alert className="w-full md:w-[450px] mx-auto my-5">
+              <MagnifyingGlassIcon className="h-4 w-4" />
+              <AlertTitle>No providers found.</AlertTitle>
+              <AlertDescription>
+                Adjust your filters to find providers that meet your needs.
+              </AlertDescription>
+            </Alert>
+          )
+      }
       <Map
         isMapVisible={isMapVisible}
         currentLocation={currentLocation}
@@ -146,7 +163,7 @@ function App() {
       >
         {isMapVisible ? "Hide map" : "Show map"}
       </Fab>
-    </>
+    </div>
   );
 }
 
